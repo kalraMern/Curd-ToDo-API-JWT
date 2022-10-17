@@ -1,0 +1,120 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Curd To-DO App",
+		"_postman_id": "6feaf5ee-21f8-ec19-1a96-9d37be0a3a0a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create To-DO",
+			"request": {
+				"url": "http://localhost:8000/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGRiMmJjYWJlYTg3OTdjMzJiZmI5YyIsInVzZXJuYW1lIjoia2FscmEiLCJwYXNzd29yZCI6IiQyYSQwOCRpQ0NkeUZSM01OYXUxS3A3NFliZmFPLm1CVzI4b1FVQlNhQ2E3V0ZnYlY0aU9RWThzclhjTyIsImlhdCI6MTY2NjAzODcxOCwiZXhwIjoxNjY2MTI1MTE4fQ.YbXfeJiPZS2GC7qR58voSefIU4MJoi8BUREbkovbz1g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"title\": \"Test Api\",\n\t \"description\":\"Add api description\",\n\t \"createdBy\":\"kalra2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View To-Do",
+			"request": {
+				"url": "http://localhost:8000/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGRiMmJjYWJlYTg3OTdjMzJiZmI5YyIsInVzZXJuYW1lIjoia2FscmEiLCJwYXNzd29yZCI6IiQyYSQwOCRpQ0NkeUZSM01OYXUxS3A3NFliZmFPLm1CVzI4b1FVQlNhQ2E3V0ZnYlY0aU9RWThzclhjTyIsImlhdCI6MTY2NjAzODcxOCwiZXhwIjoxNjY2MTI1MTE4fQ.YbXfeJiPZS2GC7qR58voSefIU4MJoi8BUREbkovbz1g",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "View Single To-Do Record",
+			"request": {
+				"url": "http://localhost:8000/634dac1b7394e6f68844d4d5",
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGRiMmJjYWJlYTg3OTdjMzJiZmI5YyIsInVzZXJuYW1lIjoia2FscmEiLCJwYXNzd29yZCI6IiQyYSQwOCRpQ0NkeUZSM01OYXUxS3A3NFliZmFPLm1CVzI4b1FVQlNhQ2E3V0ZnYlY0aU9RWThzclhjTyIsImlhdCI6MTY2NjAzODcxOCwiZXhwIjoxNjY2MTI1MTE4fQ.YbXfeJiPZS2GC7qR58voSefIU4MJoi8BUREbkovbz1g",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Update To-Do Record",
+			"request": {
+				"url": "http://localhost:8000/634dac1b7394e6f68844d4d5",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGRiMmJjYWJlYTg3OTdjMzJiZmI5YyIsInVzZXJuYW1lIjoia2FscmEiLCJwYXNzd29yZCI6IiQyYSQwOCRpQ0NkeUZSM01OYXUxS3A3NFliZmFPLm1CVzI4b1FVQlNhQ2E3V0ZnYlY0aU9RWThzclhjTyIsImlhdCI6MTY2NjAzODcxOCwiZXhwIjoxNjY2MTI1MTE4fQ.YbXfeJiPZS2GC7qR58voSefIU4MJoi8BUREbkovbz1g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t \"title\": \"Patch Api \",\n\t \"description\":\"Add api description update\",\n\t \"createdBy\":\"rahul\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Delete To-Do Record",
+			"request": {
+				"url": "http://localhost:8000/634dac1b7394e6f68844d4d5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzNGRiMmJjYWJlYTg3OTdjMzJiZmI5YyIsInVzZXJuYW1lIjoia2FscmEiLCJwYXNzd29yZCI6IiQyYSQwOCRpQ0NkeUZSM01OYXUxS3A3NFliZmFPLm1CVzI4b1FVQlNhQ2E3V0ZnYlY0aU9RWThzclhjTyIsImlhdCI6MTY2NjAzODcxOCwiZXhwIjoxNjY2MTI1MTE4fQ.YbXfeJiPZS2GC7qR58voSefIU4MJoi8BUREbkovbz1g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
